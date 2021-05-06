@@ -1,0 +1,214 @@
+﻿
+
+@{ 
+    IEnumerable<DataProvider.ThongTin> list = ViewBag.list;
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Fashion a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Women's Fashion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- js -->
+    <script src="~/Scripts/js/jquery.min.js"></script>
+    <!-- //js -->
+    <!-- countdown -->
+    <link rel="stylesheet" href="~/Content/css/jquery.countdown.css" />
+    <!-- //countdown -->
+    <!-- cart -->
+    <script src="~/Scripts/js/simpleCart.min.js"></script>
+    <!-- cart -->
+    <!-- for bootstrap working -->
+    <script type="text/javascript" src="~/Scripts/js/bootstrap-3.1.1.min.js"></script>
+    <!-- //for bootstrap working -->
+    <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="w3l_login">
+                <a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+            </div>
+            <div class="w3l_logo">
+                <h1><a href="/Home/Index">Laptop Fashion<span>For Fashion Human</span></a></h1>
+            </div>
+            <div class="search">
+                <input class="search_box" type="checkbox" id="search_box">
+                <label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+                <div class="search_form">
+                    <form action="/Home/Search/" method="post">
+                        <input type="text" name="Search" placeholder="Search...">
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            <div class="cart box_1">
+                <a href="">
+                    <div class="total">
+                        <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+                    </div>
+                    <img src="~/Content/images/bag.png" alt="" />
+                </a>
+                <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header nav_2">
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/Home/Index" class="act">Home</a></li>
+                        <!-- Mega Menu -->
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown"><p>Product</p> <b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-column columns-3">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <ul class="multi-column-dropdown">
+
+                                            <h6>LapTop</h6>
+
+                                            @foreach (var item in list)
+                                            {
+                                                <li><a href="/DanhSach/Index/?hang=@item.Hang">@item.Hang</a></li>
+                                            }
+
+
+
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href="/Home/About">About Us</a></li>
+                        <li><a href="/Home/Contact">Mail Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="banner" id="home1">
+        <div class="container">
+            <h3>fashions laptop, <span>hot laptop</span></h3>
+        </div>
+    </div>
+    <!-- //banner -->
+    @RenderBody()
+    <!-- newsletter -->
+    <div class="newsletter">
+        <div class="container">
+            <div class="col-md-6 w3agile_newsletter_left">
+                <h3>Newsletter</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
+            </div>
+            <div class="col-md-6 w3agile_newsletter_right">
+                <form action="#" method="post">
+                    <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+                    <input type="submit" value="" />
+                </form>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //newsletter -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="w3_footer_grids">
+                <div class="col-md-3 w3_footer_grid">
+                    <h3>Contact</h3>
+                    <ul class="address">
+                        <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">abc@gmail.com</a></li>
+                        <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+84 2159466</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 w3_footer_grid">
+                    <h3>Information</h3>
+                    <ul class="info">
+                        <li><a href="/Home/About">About Us</a></li>
+                        <li><a href="/Home/Contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 w3_footer_grid">
+                    <h3>Category</h3>
+                    <ul class="info">
+                        @foreach (var item in list)
+                        {
+                            <li><a href="/DanhSach/Index/?hang=@item.Hang">@item.Hang</a></li>
+                        }
+                    </ul>
+                </div>
+                <div class="col-md-3 w3_footer_grid">
+                    <h3>Location</h3>
+                    <ul class="info">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.226304574539!2d106.66580241411664!3d10.793971861822822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292c56d631bf%3A0x62f82e14a34152c4!2zSOG6u20gMjgxLzEzIEzDqiBWxINuIFPhu7ksIFBoxrDhu51uZyAxLCBUw6JuIELDrG5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1620202232064!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </ul>
+                    <h4>Follow Us</h4>
+                    <div class="agileits_social_button">
+                        <ul>
+                            <li><a href="#" class="facebook"> </a></li>
+                            <li><a href="#" class="twitter"> </a></li>
+                            <li><a href="#" class="google"> </a></li>
+                            <li><a href="#" class="pinterest"> </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <div class="footer-copy1">
+                <div class="footer-copy-pos">
+                    <a href="#home1" class="scroll"><img src="~/Content/images/arrow.png" alt=" " class="img-responsive" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+</body>
+</html>

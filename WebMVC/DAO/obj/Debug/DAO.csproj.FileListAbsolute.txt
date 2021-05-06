@@ -1,0 +1,15 @@
+D:\baitap\WebMVC\DAO\bin\Debug\DAO.dll.config
+D:\baitap\WebMVC\DAO\bin\Debug\DAO.dll
+D:\baitap\WebMVC\DAO\bin\Debug\DAO.pdb
+D:\baitap\WebMVC\DAO\bin\Debug\DataProvider.dll
+D:\baitap\WebMVC\DAO\bin\Debug\EntityFramework.dll
+D:\baitap\WebMVC\DAO\bin\Debug\EntityFramework.SqlServer.dll
+D:\baitap\WebMVC\DAO\bin\Debug\DataProvider.pdb
+D:\baitap\WebMVC\DAO\bin\Debug\DataProvider.dll.config
+D:\baitap\WebMVC\DAO\bin\Debug\EntityFramework.xml
+D:\baitap\WebMVC\DAO\bin\Debug\EntityFramework.SqlServer.xml
+D:\baitap\WebMVC\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\baitap\WebMVC\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\baitap\WebMVC\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\baitap\WebMVC\DAO\obj\Debug\DAO.dll
+D:\baitap\WebMVC\DAO\obj\Debug\DAO.pdb

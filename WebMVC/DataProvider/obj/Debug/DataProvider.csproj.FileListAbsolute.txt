@@ -1,0 +1,12 @@
+D:\baitap\WebMVC\DataProvider\bin\Debug\DataProvider.dll.config
+D:\baitap\WebMVC\DataProvider\bin\Debug\DataProvider.dll
+D:\baitap\WebMVC\DataProvider\bin\Debug\DataProvider.pdb
+D:\baitap\WebMVC\DataProvider\bin\Debug\EntityFramework.dll
+D:\baitap\WebMVC\DataProvider\bin\Debug\EntityFramework.SqlServer.dll
+D:\baitap\WebMVC\DataProvider\bin\Debug\EntityFramework.xml
+D:\baitap\WebMVC\DataProvider\bin\Debug\EntityFramework.SqlServer.xml
+D:\baitap\WebMVC\DataProvider\obj\Debug\DataProvider.csprojAssemblyReference.cache
+D:\baitap\WebMVC\DataProvider\obj\Debug\DataProvider.csproj.CoreCompileInputs.cache
+D:\baitap\WebMVC\DataProvider\obj\Debug\DataProvider.csproj.CopyComplete
+D:\baitap\WebMVC\DataProvider\obj\Debug\DataProvider.dll
+D:\baitap\WebMVC\DataProvider\obj\Debug\DataProvider.pdb
